@@ -1,0 +1,7 @@
+CONTAINER ID   IMAGE                         COMMAND                  CREATED         STATUS                   PORTS                                                                                    NAMES
+082f5f19d0fb   sail-8.2/app                  "start-container"        6 minutes ago   Up 6 minutes             0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:5173->5173/tcp, :::5173->5173/tcp, 8000/tcp   sample_laravel.test_1
+72df7bfea89a   mailhog/mailhog:latest        "MailHog"                6 minutes ago   Up 6 minutes             0.0.0.0:1025->1025/tcp, :::1025->1025/tcp, 0.0.0.0:8025->8025/tcp, :::8025->8025/tcp     sample_mailhog_1
+7d60e0d33454   getmeili/meilisearch:latest   "tini -- /bin/sh -c …"   6 minutes ago   Up 6 minutes (healthy)   0.0.0.0:7700->7700/tcp, :::7700->7700/tcp                                                sample_meilisearch_1
+c8fbe13bc0cb   mysql:latest                  "docker-entrypoint.s…"   6 minutes ago   Up 6 minutes             0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp                                     sample_mysql_1
+80169702a73e   selenium/standalone-chrome    "/opt/bin/entry_poin…"   6 minutes ago   Up 6 minutes             4444/tcp, 5900/tcp                                                                       sample_selenium_1
+f27266aaf12d   redis:alpine                  "docker-entrypoint.s…"   6 minutes ago   Up 6 minutes (healthy)   0.0.0.0:6379->6379/tcp, :::6379->6379/tcp                                                sample_redis_1
